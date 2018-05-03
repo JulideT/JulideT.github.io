@@ -1,0 +1,120 @@
+html { 
+  font-size: 20px; 
+  font-family: 'Slabo 27px', serif;
+  background-color: LavenderBlush;
+  height: 100%;
+  width: 100%;
+}
+
+a:hover {
+  color:lightcoral;
+  transition: all 2s ease 0s;
+}
+
+.head{
+  display: inline-flex;
+}
+
+h1{
+  text-align: center;
+  margin: 2rem;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: right;
+  margin:0;
+  margin-right:2rem;
+}
+
+header{
+  background-color: PaleTurquoise;
+}
+
+.logo{
+  height: 10%;
+  width: 10%;
+  margin-left:10rem;
+}
+
+p{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.container{
+  display: inline-flex;
+}
+
+.derek{
+  width: 20%;
+  height: 30%;
+  margin-left: 5rem;
+}
+.amy{
+  width: 20%;
+  height: 30%;
+  margin-left: 7rem;
+}
+
+.nathan{
+  width: 23%;
+  height: 33%;
+  margin-left: 8rem;
+}
+
+.name{
+  display: inline-flex;
+}
+
+.name2{
+  margin-left:5rem;
+}
+
+.name3{
+  margin-left:16rem;
+}
+
+.name4{
+  margin-left:18rem;
+}
+
+.word{
+  display: inline-flex;
+  margin-left: 2rem;
+  margin-right:2rem;
+}
+
+.word2{
+  margin: 1rem;
+}
+
+.word3{
+  margin: 1rem;
+}
+
+.word4{
+  margin:1rem;
+}
+
+nav {
+  background-color: darkgrey;
+  text-align: center; 
+  padding: 1rem;
+  list-style: none;
+}
+
+nav a{
+  color: purple;
+  padding-left: 2rem;
+  padding-right; 2rem;
+}
+
+h6 {
+  text-align: center;
+  margin:0;
+  background-color: PaleTurquoise;
+}

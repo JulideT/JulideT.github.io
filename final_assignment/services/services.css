@@ -1,0 +1,69 @@
+/*grid style sheet*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  padding: 5px;
+  padding-top: 0px;
+  padding-right: 30px;
+}
+
+
+
+
+div.container {
+    width: 100%;
+}
+
+div.content {
+  float:left;
+  width: 80%;
+}
+
+
+
+header {
+  clear: left;
+  text-align: left;
+  background-color: lightgray
+}
+
+footer {
+  padding: 1em;
+  clear: left;
+  background-color: lightgray
+}
+
+
+ul.n {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+li.n {
+    float: left;
+}
+
+li.n a {
+    display: inline-block;
+    color: darkpurple;
+    text-align: center;
+    padding: 6px 26px;
+    text-decoration: underline;
+}
+
+li.n a:hover {
+    background-color: darkgray;
+}
+
+
+div.boxed {
+  float: left;
+  width: 20%;
+}

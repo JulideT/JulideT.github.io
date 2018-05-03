@@ -1,0 +1,45 @@
+html {
+  font-family: helvetica;
+}
+
+nav {
+  background-color: #333;
+  height: 4rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  display: inline-block;
+  color: white;
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  display: block;
+  line-height: 2em;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #bfebff;
+  text-decoration: underline;
+}
+
+img {
+  padding-top: 20px;
+}
+section {
+  line-height: 0.15rem;
+}
+footer p {
+  font-size: 0.85rem;
+  padding: 1em;
+  clear: left;
+  background-color: lightgray
+}
+
+p {font-size-adjust: auto
+  
+}
