@@ -1,0 +1,49 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Web Design</title>
+    <script>
+
+    </script>
+  </head>
+  <body>
+    <h2>Responsive Web Design</h2>
+	<p>For the last decade, with the mobile devices’ dominating the internet searches over desktops, the urgent need came out to find out the best solution to improve end-user mobile experience. In order to find a fast and effective solution to this issue, companies have been trying to make the desktop UX fit and consolidate one code base, namely, one size fits all, to their applications and websites. However, since users act and use their smartphones differently than they do on desktops. That’s why, the companies have been investing more on “responsive web designs” for the best user experiences. </p>
+    <p>So, what are problems <strong>“Responsive Web Design”</strong> solves and why should we invest in responsiveness of the websites? First of all, its cost effectiveness. Maintaining multiple sites for mobile and non-mobile websites can be very expensive. However, if you have a responsive design for your website, a single site will serve for all your users. Secondly, it improves user experience by eliminating zooming and scrolling because the content can be viewed faster. Finally, it can help your website boost in search page rankings such as Google’s search engine optimization. If your website rank on the top, the customers will find you easily. If your aim to give the users the best experience on varied platforms, RWD is the best way to follow. </p>
+  
+    <div id="survey">
+      <p>Please fill out the survey:</p>
+      <form id=frm>
+        <label> <em>1. Are you interested in making your website responsive? </em> </label> <br/>
+        <fieldset data-role="controlgroup" data-type="horizontal">     
+          <input data-mini= "true" type="radio" name="rdIsBP" id="rdIsBPYes" value="" />
+          <label for="rdIsBPYes">Yes</label>
+          <input data-mini="true"  type="radio" name="rdIsBP" id="rdIsBPNo" value="choice-1"  />
+          <label for="rdIsBPNo">No</label>
+        </fieldset> <br/>
+        <label> <em>2. How many unique visitors does your website receive daily?</em> </label> <br/>
+        <select required>
+          <option value="">-</option>
+          <option value="100">0 - 100</option>
+          <option value="1000">100 - 1000</option>
+          <option value="1000+">1000+</option>
+        </select> <br/> <br/>
+        <label> <em>3. Further comments:</em> </label> <br/>
+        <textarea name="Text1" cols="40" rows="5"></textarea> <br/> <br/>
+        <label> <em>4. Your email address (required):</em> </label> <br/>
+        <input type="text" name="eaddress" required/> <br/> <br/>
+        <input id="checkBox" type="checkbox">
+        <label> <em>I want to receive updates </em> </label> <br/> <br/>
+
+        
+        <input type="submit" id="btnsubmit" value="Submit" onclick="submitted();"/>
+      </form>
+    </div>
+    <script>
+      function submitted() {
+        document.getElementById("survey").innerHTML = "<p>Thank you for filling out the survey!";
+      }
+    </script>
+  </body> 
+</html>
