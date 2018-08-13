@@ -1,4 +1,3 @@
-
 /* Chart for index.html with energy consumed and produced from 1960-2015*/
 google.charts.load('current', {'packages':['bar']});
 
