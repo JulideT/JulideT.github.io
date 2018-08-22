@@ -155,3 +155,10 @@ function drawChart2() {
 
         chart.draw(data, google.charts.Bar.convertOptions(options));
       }
+	  
+
+/* Vue app for footer component */
+var footerApp = new Vue({
+  el: '#footer-app',
+  data: {  }
+})

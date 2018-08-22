@@ -13,7 +13,10 @@
 
         <!-- Font Awesome -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    </head>
+
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="components.js"></script>
+	</head>
   
     <body>
 
@@ -128,149 +131,25 @@
           
             <article>
           
+		  <div id="vueapp">
           <h3 class="article-title">Advisory Board</h3>
-          
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/j_martinez.jpg" width="100%">
-              
-              <p><strong>J.L. Martinez</strong></p>
-              <p>President, 27 Consulting</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/ben_abama.jpg" width="100%">
-              <p><strong>Ben Amaba, PhD</strong></p>
-              <p>Worldwide Executive, PE, CPIM®, LEED® AP</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/tommy_boroughs.jpg" width="100%">
-              <p><strong>Tommy Boroughs</strong></p>
-              <p>Partner, Holland & Knight, LLP</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/timothy_bryant.png" width="100%">
-              <p><strong>Timothy L. Bryant</strong></p>
-              <p>PE, Senior Manager External Affairs, NextEra Energy, Inc.</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/gustavo_cepero.jpg" width="100%">
-              <p><strong>Gustavo R. Cepero</strong></p>
-              <p>Vice President, Florida Crystals Corporation</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/christopher_%20fountas.jpg" width="100%">
-              <p><strong>Christopher Fountas</strong></p>
-              <p>Partner, Arsenal Venture Partners</p>
-            </div>
-        
-          <div class="w3-row">
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/nick_gladding.jpg" width="100%">
-              <p><strong>Nick Gladding</strong></p>
-              <p>Attorney at Law, PA</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/jennifer_grove.jpg" width="100%">
-              <p><strong>Jennifer Grove</strong></p>
-              <p>Community Development Manager, Gulf Power Company</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/dan_holladay.jpg" width="100%">
-              <p><strong>Dan Holladay</strong></p>
-              <p>Executive Director, BRIDG, University of Central Florida ORC</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/byron_knibbs.jpg" width="100%">
-              <p><strong>Byron A. Knibbs</strong></p>
-              <p>Vice President, Sustainable Services Dept, Orlando Utilities Commission</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/tom_lawery.jpg" width="100%">
-              <p><strong>Tom Lawery</strong></p>
-              <p>Wholesale Renewables Manager, Distributed Energy Resources, Duke Energy</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/roy-periana.png" width="100%">
-              <p><strong>Roy Periana</strong></p>
-              <p>Director, Scripps Energy Laboratories</p>
+           <div class="w3-row">
+			<div v-for="member in members" class="w3-col w3-container s4 m3 l2">
+              <img :src="member.imgsrc" width="100%">
+              <p><strong>{{ member.name }}</strong></p>
+              <p>{{ member.desc }}</p>
             </div>
           </div>
-          <div class="w3-row">
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/tom_hernandez.png" width="100%">
-              <p><strong>Thomas L. Hernandez</strong></p>
-              <p>Senior Vice President, Business Strategy and Renewables, Tampa Electric Company</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/jeremy_susac.jpg" width="100%">
-              <p><strong>Jeremy L. Susac</strong></p>
-              <p>Vice President, Government Affairs, Lennar Ventures</p>
-            </div>
-            <div class="w3-col w3-container s4 m3 l2">
-              <img src="images/paul_zombo.jpg" width="100%">
-              <p><strong>Paul Zombo P.E.</strong></p>
-              <p>Manager, Gas Turbine Engineering</p>
-            </div>
-          </div>
+		  </div>
           </article>
         </main>
 
 
-             <!-- Footer -->
-        <div class="container footer-container">
-            <footer class="footer">
-                <div class="footer-lists">
-                    <div class="row">
-                        <div class="col-sm">
-                            <ul>
-                                <li><h4>Research</h4></li>
-                                <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/waste-to-energy/">Waste to Energy</a></li>
-                                <li><a href="http://floridaenergy.ufl.edu/fl-university-research/2016-research-archive/catalyst/">Catalysts</a></li>
-                                <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/water/">Water Purification</a></li>
-                                <li><a href="http://floridaenergy.ufl.edu/fl-university-research/2016-research-archive/carbon-capture/">Carbon Capture</a></li>
-                                <li><a href="http://floridaenergy.ufl.edu/?s=climate+">Climate Change</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm">
-                            <ul>
-                                <li><h4>Universities</h4></li>
-                                <li><a href="http://www.ufl.edu/">University Of Florida</a></li>
-                                <li><a href="http://www.fsu.edu/">Florida State University</a></li>
-                                <li><a href="https://www.ucf.edu/">University of Central Florida</a></li>
-                                <li><a href="https://www.usf.edu/">University of South Florida</a></li>
-                                <li><a href="https://www.fiu.edu/">Florida International University</a></li>
-                            </ul>
-                        </div>   
-                        <div class="col-sm">
-                            <ul>
-                                <li><h4>Helpful Links</h4></li>
-                                <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/financing/">Energy Financing &amp; Fundings  </a></li>
-                                <li><a href="http://floridaenergy.ufl.edu/energy-research/">FESC Funded Projects</a></li>
-                                <li><a href="http://floridaenergy.ufl.edu/energy-education/energy-extension-service/">Energy Extention Service</a></li>
-                                <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/associations-organizations/">Associations and Organizations</a></li>
-                                <li><a href="http://floridaenergy.ufl.edu/fl-energy-industry/education-energy-opportunities/">Opportunities</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm">
-                            <h4>Connect</h4>
-                            <p>Please follow us in social media</p>
-
-                            <p class="social-icons">
-                                <a href="https://www.facebook.com/FLEnergySC/"><i class="fa fa-facebook fa-2x"></i></a>
-                                <a href="https://twitter.com/FESC_UF"><i class="fa fa-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/company/florida-energy-systems-inc"><i class="fa fa-linkedin fa-2x"></i></a>
-                               
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="footer-bottom">
-                        <p class="text-center"> © Copyright 2018 - FESC</p>
-                        <p class="text-center"><a href="#">Back to top</a></p>
-                </div>
-
-            </footer>
-        </div>
+          
+  <!--Vue.js for footer-->
+  <div id="footer-app">
+    <foot></foot>
+  </div>
 
 
         <!-- Bootcamp JavaScript -->
@@ -278,6 +157,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="about.js"></script>
 
     </body>
 </html>
